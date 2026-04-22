@@ -1,42 +1,69 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Alba y David</title>
     <meta
-      name="description"
-      content="Página de boda de Alba y David. Próximamente más detalles."
+            name="description"
+            content="Página de boda de Alba y David con información del evento."
     />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <header class="hero">
-        <p class="overline">Nuestra boda</p>
-        <h1>Alba y David</h1>
-        <p class="intro">
-          Esta es una base sencilla para la web de la boda. Desde aquí podemos
-          añadir fecha, lugar, horarios, confirmación de asistencia y fotos.
-        </p>
-      </header>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+<div class="boda-header">
+    <h1>Enlace de Alba y David</h1>
+</div>
 
-      <main>
-        <section class="section">
-          <h2>Información principal</h2>
-          <p>Espacio para poner la fecha, el lugar y cualquier detalle importante.</p>
-        </section>
+<div class="descripcion">
+    <p>
+        Nos hace mucha ilusión compartir este momento tan especial con vosotros.
+        Aquí encontraréis toda la información sobre nuestro gran día.
+    </p>
+</div>
 
-        <section class="section">
-          <h2>Agenda</h2>
-          <p>Aquí puede ir el horario aproximado del día: ceremonia, cóctel, cena y fiesta.</p>
-        </section>
+<div class="boda-nav">
+    <a href="#info">Información general</a>
+    <a href="#lugar">Lugar del evento</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#normas">Normas</a>
+    <a href="#fotos">Subir fotos</a>
+</div>
 
-        <section class="section">
-          <h2>Confirmación</h2>
-          <p>Más adelante podemos conectar esta parte con un formulario o un enlace externo.</p>
-        </section>
-      </main>
-    </div>
-  </body>
+<div id="info" class="boda-section">
+    <div class="decoracion">✦</div>
+    <h3>Información general</h3>
+    <p>Contenido aquí...</p>
+</div>
+
+<div id="lugar" class="boda-section">
+    <div class="decoracion">✦</div>
+    <h3>Lugar del evento</h3>
+    <p>Contenido aquí...</p>
+</div>
+
+<div id="actividades" class="boda-section">
+    <div class="decoracion">✦</div>
+    <h3>Actividades</h3>
+    <p>Contenido aquí...</p>
+</div>
+
+<div id="normas" class="boda-section">
+    <div class="decoracion">✦</div>
+    <h3>Normas</h3>
+    <p>Contenido aquí...</p>
+</div>
+
+<div id="fotos" class="boda-section">
+    <iframe
+            src="AQUI_PEGA_TU_URL_DEL_FORMULARIO"
+            width="100%"
+            height="600"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+        Cargando formulario...
+    </iframe>
+</div>
+</body>
 </html>
