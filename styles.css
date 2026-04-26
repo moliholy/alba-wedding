@@ -203,6 +203,29 @@ html, body {
   font-size: 1.2em;
 }
 
+.doc-image {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+.doc-images-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.doc-images-row img {
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .site-header h1 {
     font-size: 2em;
@@ -220,5 +243,10 @@ html, body {
 
   .upload-card {
     padding: 24px 20px;
+  }
+
+  .doc-images-row img {
+    width: 140px;
+    height: 140px;
   }
 }
