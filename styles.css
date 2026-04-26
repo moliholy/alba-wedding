@@ -182,6 +182,11 @@ html, body {
   line-height: 1.5;
 }
 
+.schedule-info ul {
+  margin: 6px 0 0;
+  font-size: 1em;
+}
+
 .spotify-embed {
   display: block;
   width: 100%;
