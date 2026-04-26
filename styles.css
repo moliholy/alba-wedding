@@ -1,16 +1,18 @@
-body {
+html, body {
   margin: 0;
+  overflow-x: hidden;
   font-family: Georgia, "Times New Roman", serif;
   background-color: #f5f1e6;
   color: #2f3e2f;
 }
 
-.boda-header {
+.site-header {
   height: 90vh;
-  background-image: url("tu-imagen.jpg");
+  background-image: url("img/header.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -18,15 +20,26 @@ body {
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
-.boda-header h1 {
+.site-header h1 {
   font-size: 3em;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
   border: 2px solid #a5d6a7;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.descripcion {
+.header-subtitle {
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  color: #c8e6c9;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 20px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.intro {
   padding: 40px;
   text-align: center;
   font-size: 1.2em;
@@ -35,14 +48,14 @@ body {
   border-bottom: 3px solid #a5d6a7;
 }
 
-.boda-nav {
+.main-nav {
   background-color: #2f4f2f;
   padding: 20px;
   text-align: center;
   border-bottom: 4px solid #a5d6a7;
 }
 
-.boda-nav a {
+.main-nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #c8e6c9;
@@ -50,18 +63,18 @@ body {
   font-size: 1.1em;
 }
 
-.boda-nav a:hover {
+.main-nav a:hover {
   color: #ffffff;
   text-shadow: 0 0 5px #a5d6a7;
 }
 
-.boda-section {
+.content-section {
   padding: 50px;
   border-bottom: 2px solid #d7ccc8;
   background-color: #fffaf0;
 }
 
-.boda-section h3 {
+.content-section h3 {
   font-size: 1.8em;
   margin-bottom: 15px;
   color: #3e5c3e;
@@ -69,9 +82,31 @@ body {
   padding-left: 10px;
 }
 
-.boda-section p {
+.content-section p {
   font-size: 1.1em;
   line-height: 1.6;
+}
+
+.content-section h4 {
+  font-size: 1.2em;
+  color: #3e5c3e;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.content-section ul {
+  font-size: 1.1em;
+  line-height: 1.7;
+  padding-left: 24px;
+}
+
+.content-section a:not(.upload-button) {
+  color: #3e5c3e;
+  text-decoration: underline;
+}
+
+.content-section a:not(.upload-button):hover {
+  color: #2f4f2f;
 }
 
 .upload-card {
@@ -103,13 +138,60 @@ body {
   transform: translateY(-1px);
 }
 
+.qr-code {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin: 20px auto 8px;
+  border-radius: 8px;
+}
+
 .upload-note {
   margin-top: 18px;
   font-size: 0.95em;
   color: #5f6f5f;
 }
 
-.decoracion {
+.schedule {
+  margin: 12px 0 24px;
+}
+
+.schedule-entry {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e0d4;
+  align-items: start;
+}
+
+.schedule-entry:last-child {
+  border-bottom: none;
+}
+
+.schedule-time {
+  font-weight: bold;
+  color: #3e5c3e;
+  font-size: 0.9em;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.schedule-info {
+  line-height: 1.5;
+}
+
+.spotify-embed {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 380px;
+  margin: 30px auto 0;
+  border-radius: 12px;
+}
+
+.decoration {
   text-align: center;
   color: #a5d6a7;
   margin-bottom: 15px;
@@ -117,17 +199,17 @@ body {
 }
 
 @media (max-width: 768px) {
-  .boda-header h1 {
+  .site-header h1 {
     font-size: 2em;
     padding: 15px;
   }
 
-  .boda-nav a {
+  .main-nav a {
     display: block;
     margin: 10px 0;
   }
 
-  .boda-section {
+  .content-section {
     padding: 25px;
   }
 
